@@ -1,2 +1,3 @@
 ---
 # vars file for ansible-role-kubeconfig-ca
+openshift_kubeconfig_file: "/home/ansible/openshift/config/auth/kubeconfig"

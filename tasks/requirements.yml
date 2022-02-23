@@ -1,0 +1,17 @@
+---
+- name: update apt
+  ansible.builtin.apt:
+    update_cache: true
+
+- name: install apt dependencies
+  ansible.builtin.apt:
+    name:
+      - python3
+      - python3-pip
+      - python3-setuptools
+
+- name: install python dependencies
+  ansible.builtin.pip:
+    name:
+      - openshift
+...

@@ -1,2 +1,12 @@
 ---
-# tasks file for ansible-role-kubeconfig-ca
+- name: install requirements
+  include_tasks: requirements.yml
+  tags:
+    - prerequisites
+
+- name: update kubeconfig file
+  include_tasks: regenerate_kubeconfig_ca.yml
+  tags:
+    - openshift
+    - openshift.kubeconfig
+...
