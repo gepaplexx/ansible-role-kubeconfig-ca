@@ -1,5 +1,6 @@
 ---
 # defaults file for ansible-role-kubeconfig-ca
-kubeconfig_ca_userconfig: "/home/ansible/.kube/config"
-kubeconfig_ca_cert_path: "/home/ansible"
-kubeconfig_ca_user_kubeconfig: "/home/ansible/.kube/config"
+kubeconfigca_userconfig: "/home/ansible/.kube/config"
+kubeconfigca_cert_path: "/home/ansible"
+kubeconfigca_user_kubeconfig: "/home/ansible/.kube/config"
+kubeconfigca_user: "ansible"
